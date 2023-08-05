@@ -1,0 +1,282 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+/* ESTILOS APLICADOS AL CONTENEDOR PADRE */
+.contenedor1{
+    grid-area: infopersonal;
+}
+
+.contenedor2{
+    grid-area: skill;
+}
+
+.contenedor3{
+    grid-area: adicional;
+}
+
+#principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "infopersonal skill adicional";
+    border: solid 2px black;
+    width: 60vw;
+    height: 100vw;
+    box-shadow: 5px 5px 3px gray;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    margin: 0%;
+    
+}
+
+
+/* ESTILOS APLICADOS AL CONTENEDOR 1 */
+
+.contenedor1 {
+    background-color: #dee3e3;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-right: 1px solid black;
+}
+
+.contenedor1 h2 {
+    border-bottom: 3px solid #1a6565;
+    border-right: 3px solid #1a6565;
+}
+
+.imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33% ;
+}
+.imagen img{
+    border-bottom: 3px solid #1a6565;
+    border-right: 3px solid #1a6565;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.personal{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+    height: 25%;
+    margin-top: 10%;
+}
+
+.personal h2{
+    width: 190px;
+}
+
+.personal > div{
+    display: flex;
+    align-items: center;
+}
+
+.personal p>span{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.personal p{
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+    height: 42%;
+    margin-top: 10%;
+}
+
+.perfil h2{
+    width: 170px;
+}
+
+.perfil p{
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+/* ESTILOS APLICADOS AL CONTENEDOR 2 */
+
+.contenedor2{
+    background-color: #a0a3a3;
+    padding: 10%;
+    border-right: 1px solid black;
+}
+
+.contenedor2 h2{
+    border-bottom: 3px solid #dee3e3;
+    border-right: 3px solid #dee3e3;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 33%;
+}
+
+.skill h2{
+    width: 160px;
+}
+
+.skill >div{
+    display: flex;
+    align-items: center;
+}
+
+.skill p{
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+.skill p>span{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    row-gap: 2%;
+    margin-top: 5%;
+}
+
+.proyectos h2{
+    width: 200px;
+}
+
+.proyectos dl{
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+.proyectos dt{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.logros{
+    display: flex;
+    flex-direction: column;
+    height: 42%;
+    row-gap: 2%;
+    margin-top: 15%;
+}
+
+.logros h2{
+    width: 70px;
+}
+
+.logros dl{
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+.logros dt{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+/* ESTILOS APLICADOS AL CONTENEDOR 3 */
+
+.contenedor3{
+    background-color: #1a6565;
+    padding: 10%;
+    border-right: 1px solid black;
+}
+
+.contenedor3 h2{
+    border-bottom: 3px solid #a0a3a3;
+    border-right: 3px solid #a0a3a3;
+}
+
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 33%;
+}
+
+.idiomas h2{
+    width: 75px;
+}
+
+.idiomas p{
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;    
+}
+
+.idiomas p>span{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.estudios{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+    height: 25%;
+    margin-top: 5%;
+}
+
+.estudios h2{
+    width: 85px;
+}
+
+.estudios dl{
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+.estudios dt{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    grid-row: 2%;
+    height: 42%;
+    margin-top: 15%;
+    }
+
+.experiencia h2{
+    width: 110px;
+}
+
+.experiencia dl{
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+.experiencia dt{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
